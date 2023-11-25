@@ -63,7 +63,7 @@ class JokeVM(
         if (storedJoke[1] != localDateToString(LocalDate.now()) || (storedJoke[0] ?: "") == ""){
             fetchNewJoke()
         } else {
-            _joke.update { storedJoke[0]?:"Something went wrong with saving\nPress Refresh to get your joke" }
+            _joke.update { storedJoke [0]?:"Something went wrong with saving\nPress Refresh to get your joke" }
         }
     }
 
